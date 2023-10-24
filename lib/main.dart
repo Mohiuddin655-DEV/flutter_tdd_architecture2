@@ -9,7 +9,7 @@ Future<void> main() async {
     androssy: const Androssy(
       settings: AndrossySettings(
         locale: Locale("en"),
-        theme: ThemeMode.dark,
+        theme: ThemeMode.system,
       ),
     ),
     child: const Application(),
@@ -17,7 +17,9 @@ Future<void> main() async {
 }
 
 class Application extends StatelessWidget {
-  const Application({super.key});
+  const Application({
+    super.key,
+  });
 
   @override
   Widget build(BuildContext context) {
